@@ -11,36 +11,26 @@
 
 }
 
-body {
+.video-mercado {
 
-
-
-    background-image: url(./assets/img-background-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-
-}
-
-
-.logo {
-
-    width: 180px;
-    margin: 5px auto;
-    display: block;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
 
 }
 
 main {
 
-    width: 375px;
-
+    width: 20vw;
+    height: 50vh;
     border-radius: 20px;
     background: #27516f;
     margin: 0 auto 40px;
-    padding: 44px 24px 23px;
-    opacity: 0.9;
+    padding: 30px 24px 23px;
+    opacity: 0.88;
+
 
 }
 
@@ -58,13 +48,14 @@ select {
     border: 1px solid #BBbbbB;
     background: #FFFFFF;
     width: 100%;
-    height: 48px;
-    margin-bottom: 24px;
+    height: 30px;
+    margin-bottom: 12px;
+
     cursor: pointer;
-    
-    padding-left: 18px;
+    display: flex;
+    padding: 5px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     color: #555555;
 
 }
@@ -74,14 +65,15 @@ input {
     border-radius: 4px;
     border: 1px solid #BBbbbB;
     background: #FFFFFF;
-    width: 95%;
-    height: 48px;
-    margin-bottom: 24px;
+    display: flex;
+    width: 96%;
+    height: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
-   
-    padding-left: 18px;
+
+    padding: 5px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     color: #555555;
 
 }
@@ -91,12 +83,12 @@ button {
     background: #cc8105;
     border: none;
     width: 100%;
-    height: 48px;
+    height: 38px;
     font-weight: 700;
     line-height: 18px;
     color: #FFF;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 button:hover {
@@ -112,8 +104,8 @@ section {
 
     border-radius: 20px;
     border: 1px solid #cc8105;
-    margin-top: 36px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,12 +142,45 @@ section {
 
 }
 
-.currency-value, .currency-value-to-convert {
+.currency-value,
+.currency-value-to-convert {
 
     color: #f2e7e7;
     font-weight: 700;
     font-size: 20px;
     display: block;
     margin: auto;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    main {
+
+        width: 65vw;
+        height: 40vh;
+        border-radius: 20px;
+        background: #27516f;
+        margin-top: 25%;
+        margin-right: 31px;
+        padding: 35px;
+        opacity: 0.88;
+
+
+    }
+
+    section {
+
+        margin-top: 38px;
+
+    }
+
+    button {
+
+        height: 72px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
 
 }
