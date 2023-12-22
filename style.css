@@ -11,14 +11,44 @@
 
 }
 
+body {
+
+    background: #000000;
+   
+
+    
+}
+
+h1 {
+    font-size: 30px;
+    color: #FFD700	;
+    text-align: center;
+    font-weight: bold;
+
+}
+
 .video-mercado {
 
+    background-size: cover;
     position: fixed;
     top: 0;
     z-index: -1;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
+
+}
+
+.mascara-video {
+
+    background: rgb(247, 236, 236);
+    background: linear-gradient(270deg, rgba(247, 236, 236, 0) 0%, rgba(0, 0, 0, 1) 98%);
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    
 }
 
 main {
@@ -36,9 +66,10 @@ main {
 
 label {
 
-    color: #e4920d;
+    color: #FFD700	;
     font-weight: 400;
     font-size: 16px;
+    
 
 }
 
@@ -71,7 +102,7 @@ input {
     margin-bottom: 20px;
     cursor: pointer;
 
-    padding: 5px;
+    padding: 4px;
     font-weight: 700;
     font-size: 14px;
     color: #555555;
@@ -106,6 +137,7 @@ section {
     border: 1px solid #cc8105;
     margin-top: 20px;
     padding: 15px;
+    display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,11 +185,11 @@ section {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
     main {
 
-        width: 65vw;
+        width: 61vw;
         height: 40vh;
         border-radius: 20px;
         background: #27516f;
